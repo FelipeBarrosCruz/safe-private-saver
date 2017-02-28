@@ -3,3 +3,7 @@
 body {
   width: 300px;
 }
+
+.app-container {
+  margin-bottom: 20px;
+}
