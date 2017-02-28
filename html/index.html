@@ -1,15 +1,25 @@
 <!doctype html lang="en-US">
-<html>
+<html data-ng-app="SPSApp">
   <head>
     <title>SPS - Safe Private Saver</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/index.css">
   </head>
-  <body>
-    <section class="container app-container">
-      <h1>Safe Private Saver</h1>
-      <button id="checkPage" class="btn btn-primary btn-xs">Check this page now!</button>
+  <body class="bg-info">
+    <section class="container app-container" data-ng-controller="IndexController as index_vm">
+      <h4 class="text-center text-primary">SPS - Safe Private Saver</h4>
+      <div class="row">
+        <div class="col-sm-12">
+          <form class="text-center form-index-options">
+            <button class="btn btn-default" data-ng-click="index_vm.save()">Save</button>
+            <a href="/html/pages.html" class="btn btn-default" target="_blank">Pages</a>
+          </form>
+        </div>
+      </div>
     </section>
-    <script src="/script/index.js"></script>
+    <script type="text/javascript" src="/bower_components/lodash/dist/lodash.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/bower_components/crypto-js/crypto-js.js"></script>
+    <script type="text/javascript" src="/script/index.js"></script>
   </body>
 </html>

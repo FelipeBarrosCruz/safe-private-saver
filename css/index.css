@@ -7,3 +7,7 @@ body {
 .app-container {
   margin-bottom: 20px;
 }
+
+.form-index-options > button {
+  margin-left: 5px;
+}
